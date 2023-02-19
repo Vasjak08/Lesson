@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_3</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача4</h2>
+   <script>
+      //Вводимо дані
+      const Child = 6,
+         Student = 17,
+         Worker = 23,
+         Retired = 65
+
+      const humanAge = parseInt(prompt('Вік людини'));
+      //Знайдемо резльтат
+      let userStatus
+      if (humanAge <= Child)
+         userStatus = "Дитина"
+      else
+         if (humanAge < Student) userStatus = 'Школяр'
+
+         else
+            if (humanAge < Worker) userStatus = 'Студент'
+
+            else
+               if (humanAge < Retired) userStatus = 'Робітник'
+               else userStatus = 'Пенсіонер'
+      document.write(userStatus)
+
+
+   </script>
+
+</body>
+
+
+</html>

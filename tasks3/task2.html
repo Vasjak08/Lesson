@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_3</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача2</h2>
+   <script>
+      let priceProduct = parseFloat(prompt('Ціна товару'))
+      let Mymoney = parseFloat(prompt('К-ть грошей'))
+      const priceLottery = 4
+      if (priceProduct > Mymoney)
+         document.write('Грошей мало для покупки!')
+
+      else if (priceProduct + priceLottery <= Mymoney)
+         document.write(`Грошей вистачає для покпки +1 білет лотареї за 4грн ${priceLottery} грн.`)
+      else
+         document.write(`- 4грн ${priceLottery} грн.`)
+
+   </script>
+
+</body>
+
+</html>
